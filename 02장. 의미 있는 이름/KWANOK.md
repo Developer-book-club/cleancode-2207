@@ -69,7 +69,7 @@ MAX_CLASSES_PER_STUDENT 는 젯브레인사의 command + shift + f 커맨드로 
 
 하지만 숫자 7은 검색하면 힘들죠
 
-![](02_kwanok_images/7search.png)
+![](KWANOK_IMAGES/7search.png)
 
 ## 이름 길이는 범위 크기에 비례해야 합니다.
 
