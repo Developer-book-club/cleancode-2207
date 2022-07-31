@@ -30,7 +30,7 @@
 |0주차|07.24 (일) 10:00|OT|✅|
 |1주차|07.31 (일) 22:00|1장 ~ 3장|✅| [박우찬님](https://github.com/Woozzang)
 |2주차|08.07 (일) 22:00|4장 ~ 5장|| [채진호님](https://github.com/asdzxc9395), [김도현님](https://github.com/Do-hyun-Kim)
-|3주차|08.14 (일) 22:00|6장 ~ 7장|| [노관옥님](https://github.com/asdzxc9395), [김한별님](https://github.com/luceta)
+|3주차|08.14 (일) 22:00|6장 ~ 7장|| [노관옥님](https://github.com/kwanok), [김한별님](https://github.com/luceta)
 |4주차|08.21 (일) 22:00|8장 ~ 9장||
 |5주차|08.28 (일) 22:00|10장 ~ 11장||
 |6주차|09.04 (일) 22:00|12장 ~ 13장||
@@ -72,3 +72,41 @@
 <br>
 
 # 🙋‍♀ Members
+
+<table>
+    <tr align="center">
+        <td><B>노관옥<B></td>
+        <td><B>박우찬<B></td>
+        <td><B>채진호<B></td>
+        <td><B>김도현<B></td>
+        <td><B>김한별<B></td>
+    </tr>
+    <tr align="center">
+        <td>
+            <img src="https://github.com/kwanok.png?size=100">
+            <br>
+            <a href="https://github.com/kwanok"><I>kwanok</I></a>
+        </td>
+        <td>
+            <img src="https://github.com/Woozzang.png?size=100">
+            <br>
+            <a href="https://github.com/Woozzang"><I>Woozzang</I></a>
+        </td>
+        <td>
+            <img src="https://github.com/asdzxc9395.png?size=100">
+            <br>
+            <a href="https://github.com/asdzxc9395"><I>asdzxc9395</I></a>
+        </td>
+        <td>
+            <img src="https://github.com/Do-hyun-Kim.png?size=100">
+            <br>
+            <a href="https://github.com/Do-hyun-Kim"><I>Do-hyun-Kim</I></a>
+        </td>
+        <td>
+            <img src="https://github.com/luceta.png?size=100">
+            <br>
+            <a href="https://github.com/luceta"><I>luceta</I></a>
+        </td>
+    </tr>
+</table>
+</br>
