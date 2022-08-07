@@ -19,8 +19,7 @@
 - 몇초만 더 생각하면 코드로 대다수 의도를 표현할 수 있다.
     
     ```java
-    if ((employee.flags & HOURLY_FLAG) && (employee.age > 
-65))
+    if ((employee.flags & HOURLY_FLAG) && (employee.age > 65))
     
     // 코드로 의도를 잘 표현한 예시
     if (employee.isEligibleForFullBenefits())
@@ -77,11 +76,9 @@
 - **함수나 변수로 표현할 수 있다면 주석을 달지 마라**
     
     ```java
-    if 
-(smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
+    if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
     
-    ArrayList moduleDependees = 
-smodule.getDependSubsystems();
+    ArrayList moduleDependees = smodule.getDependSubsystems();
     String ourSubSystem = subSysMod.getSubSystem();
     if (moduleDependees.contains(ourSubSystem))
     ```
