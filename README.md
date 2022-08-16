@@ -30,8 +30,8 @@
 |0주차|07.24 (일) 10:00|OT|✅|
 |1주차|07.31 (일) 22:00|1장 ~ 3장|✅| [박우찬님](https://github.com/Woozzang)
 |2주차|08.07 (일) 22:00|4장 ~ 5장|✅| [채진호님](https://github.com/asdzxc9395), [김도현님](https://github.com/Do-hyun-Kim)
-|3주차|08.14 (일) 22:00|6장 ~ 7장|| [노관옥님](https://github.com/kwanok), [김한별님](https://github.com/luceta)
-|4주차|08.21 (일) 22:00|8장 ~ 9장||
+|3주차|08.14 (일) 22:00|6장 ~ 7장|✅| [노관옥님](https://github.com/kwanok), [김한별님](https://github.com/luceta)
+|4주차|08.21 (일) 22:00|8장 ~ 9장||[박우찬님](https://github.com/Woozzang), [김도현님](https://github.com/Do-hyun-Kim)
 |5주차|08.28 (일) 22:00|10장 ~ 11장||
 |6주차|09.04 (일) 22:00|12장 ~ 13장||
 |7주차|09.18 (일) 22:00|14장 ~ 15장||
