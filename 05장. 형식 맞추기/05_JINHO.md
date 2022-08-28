@@ -1,4 +1,4 @@
-# 5장. 형식맞추기
+# 5장. 형식을 맞추기
 
 ## 형식을 맞추는 목적
 
@@ -309,19 +309,96 @@ private void measureLine(String line) {
 
 #### 가로 정렬
 ```java
-public class FitNesseExpediter implements ResponseSender {
-	private		Socket		  socket;
-	private 	InputStream 	  input;
-	private 	OutputStream 	  output;
-	private 	Reques		  request; 		
-	private 	Response 	  response;	
-	private 	FitNesseContex	  context; 
-	protected 	long		  requestParsingTimeLimit;
-	private 	long		  requestProgress;
-	private 	long		  requestParsingDeadline;
-	private 	boolean		  hasError;
-	
-	... 
+public class CodeAnalyzer implements JavaFileAnalysis {
+	private int lineCount;
+	private int maxLineWidth;
+	private int widestLineNumber;
+	private LineWidthHistogram lineWidthHistogram;
+	private int totalChars;
+
+	public CodeAnalyzer() {
+		lineWidthHistogram = new LineWidthHistogram();
+	}
+
+	public static List<File> findJavaFiles(File parentDirectory) {
+		List<File> files = new ArrayList<File>();
+		findJavaFiles(parentDirectory, files);
+		return files;
+	}
+
+	private static void findJavaFiles(File parentDirectory, List<File> files) {
+		for (File file : parentDirectory.listFiles()) {
+			if (file.getName().endsWith(".java"))
+				files.add(file);
+			else if (file.isDirectory())
+				findJavaFiles(file, files);
+			}
+	}
+
+	public void analyzeFile(File javaFile) throws Exception {
+		BufferedReader br = new BufferedReader(new FileReader(javaFile));
+		String line;
+		while ((line = br.readLine()) != null)
+			measureLine(line);
+	}
+
+	private void measureLine(String line) {
+		lineCount++;
+		int lineSize = line.length();
+		totalChars += lineSize;
+		lineWidthHistogram.addLine(lineSize, lineCount);
+		recordWidestLine(lineSize);
+	}
+
+	private void recordWidestLine(int lineSize) {
+		if (lineSize > maxLineWidth) {
+			maxLineWidth = lineSize;
+			widestLineNumber = lineCount;
+		}
+	}
+
+	public int getLineCount() {
+		return lineCount;
+	}
+
+	public int getMaxLineWidth() {
+		return maxLineWidth;
+	}
+
+	public int getWidestLineNumber() {
+		return widestLineNumber;
+	}
+
+	public LineWidthHistogram getLineWidthHistogram() {
+		return lineWidthHistogram;
+	}
+
+	public double getMeanLineWidth() {
+		return (double)totalChars/lineCount;
+	}
+
+	public int getMedianLineWidth() {
+		Integer[] sortedWidths = getSortedWidths();
+		int cumulativeLineCount = 0;
+		for (int width : sortedWidths) {
+			cumulativeLineCount += lineCountForWidth(width);
+			if (cumulativeLineCount > lineCount/2)
+				return width;
+		}
+		throw new Error("Cannot get here");
+	}
+	private int lineCountForWidth(int width) {
+		return lineWidthHistogram.getLinesforWidth(width).size();
+	}
+	private Integer[] getSortedWidths() {
+		Set<Integer> widths = lineWidthHistogram.getWidths();
+		Integer[] sortedWidths = (widths.toArray(new Integer[0]));
+		Arrays.sort(sortedWidths);
+		return sortedWidths;
+	}
+}
+
+
 ```
 - 정렬하기 어렵고 효율적이지도 않다.
 - 위에 공백과 밀집도에 따라 변수의 관계성이 약해보인다.
